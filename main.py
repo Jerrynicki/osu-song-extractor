@@ -12,7 +12,7 @@ if cwd.replace("\\", "/").split("/")[1] == "Users":
 
 if osu_dir == "":
     print("osu! directory not found. Please input it manually.")
-    osu_dir = input(":").replace("\\", "/")
+    osu_dir = input(":").replace("\\", "/").rstrip("/")
 
 if not os.path.isdir("export"):
     os.mkdir("export")
